@@ -81,7 +81,7 @@ except Exception:
 
 
 # Ensure that there is an endpoint for batch scoring
-endpoint_name="chicago-parking-tickets-batch-xziyg1"
+endpoint_name="chicago-parking-tickets-batch-qz"
 try:
     endpoint=ml_client.batch_endpoints.get(endpoint_name)
     print(f"You already have an endpoint named {endpoint_name}, we'll reuse it as is.")
