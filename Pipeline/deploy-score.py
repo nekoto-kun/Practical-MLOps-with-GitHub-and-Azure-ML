@@ -113,7 +113,7 @@ except Exception:
         code_configuration=CodeConfiguration(code="scripts", scoring_script="score_model.py"),
         compute=cluster_name,
         settings=ModelBatchDeploymentSettings(
-            instance_count=2,
+            instance_count=1,
             max_concurrency_per_instance=2,
             mini_batch_size=10,
             output_action=BatchDeploymentOutputAction.APPEND_ROW,
