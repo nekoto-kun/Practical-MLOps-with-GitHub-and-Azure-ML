@@ -67,7 +67,7 @@ except Exception:
         # Minimum running nodes when there is no job running
         min_instances=0,
         # Nodes in cluster
-        max_instances=4,
+        max_instances=1,
         # How many seconds will the node running after the job termination
         idle_time_before_scale_down=180,
         # Dedicated or LowPriority. The latter is cheaper but there is a chance of job termination
