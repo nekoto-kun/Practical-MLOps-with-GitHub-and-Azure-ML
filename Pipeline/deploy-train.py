@@ -53,7 +53,7 @@ except Exception:
         # Azure Machine Learning Compute is the on-demand VM service
         type="amlcompute",
         # VM Family
-        size="STANDARD_DS3_V2",
+        size="Standard_F4s_v2",
         # Minimum running nodes when there is no job running
         min_instances=0,
         # Nodes in cluster

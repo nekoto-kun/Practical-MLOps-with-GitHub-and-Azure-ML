@@ -63,11 +63,11 @@ except Exception:
         # Azure Machine Learning Compute is the on-demand VM service
         type="amlcompute",
         # VM Family
-        size="STANDARD_DS3_V2",
+        size="Standard_F4s_v2",
         # Minimum running nodes when there is no job running
         min_instances=0,
         # Nodes in cluster
-        max_instances=1,
+        max_instances=4,
         # How many seconds will the node running after the job termination
         idle_time_before_scale_down=180,
         # Dedicated or LowPriority. The latter is cheaper but there is a chance of job termination
@@ -113,7 +113,7 @@ except Exception:
         code_configuration=CodeConfiguration(code="scripts", scoring_script="score_model.py"),
         compute=cluster_name,
         settings=ModelBatchDeploymentSettings(
-            instance_count=1,
+            instance_count=2,
             max_concurrency_per_instance=2,
             mini_batch_size=10,
             output_action=BatchDeploymentOutputAction.APPEND_ROW,
